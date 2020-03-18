@@ -390,7 +390,8 @@ img {
 .logo {
   color: #E3B873;
   text-transform: uppercase;
-  font-size: 1.075rem; }
+  font-size: 1.075rem;
+  font-family: Futura Demi, sans-serif; }
 
 .nav__item {
   text-decoration: none;
@@ -404,8 +405,10 @@ img {
 .phone {
   color: #E3B873; }
 
-.contacts__phone {
-  margin-right: 45px; }
+.contacts {
+  font-family: Futura Demi, sans-serif; }
+  .contacts__phone {
+    margin-right: 45px; }
 
 .hero {
   position: relative;
@@ -436,13 +439,15 @@ img {
     margin-bottom: 3rem; }
   .hero__button {
     margin-right: 20px;
-    padding: 20px 25px; }
+    padding: 20px 25px;
+    font-family: Futura Demi, sans-serif; }
   .hero__instagram {
     position: absolute;
     max-width: 80px;
     height: 100vh;
     left: 0;
-    top: 0; }
+    top: 0;
+    font-family: Futura Demi, sans-serif; }
   .hero__scroll-down {
     position: absolute;
     display: flex;
@@ -455,7 +460,8 @@ img {
     background-color: #131313;
     text-transform: uppercase;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'Yeseva One', cursive; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -541,7 +547,7 @@ img {
   color: #fff;
   padding: 1.214rem 2.6rem; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   html {
     font-size: 12px; }
   .nav__item {
