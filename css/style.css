@@ -548,6 +548,9 @@ img {
   padding: 1.214rem 2.6rem;
   width: 16.28rem; }
 
+.design {
+  background: linear-gradient(#fff 50%, #131313 50%); }
+
 .section-title__text {
   font-family: 'Futura Book', sans-serif;
   text-transform: none;
@@ -581,6 +584,12 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .design__section-title {
+    color: #fff; }
+  .design__card {
+    margin-bottom: 4.29rem; }
+  .design {
+    background: #131313; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
