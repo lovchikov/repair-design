@@ -384,6 +384,17 @@ template {
   max-width: 1256px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-50 {
+  flex-basis: 50%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -399,10 +410,32 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313;
+    color: #fff; }
   .section-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    text-align: center; }
+    .section-title--left {
+      text-align: left; }
+    .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      line-height: 138.6%; }
+      .section-title__heading--primary {
+        color: #E3B873; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 90px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 2rem; }
+    .section-title__text {
+      font-size: 1.28rem;
+      background-image: 2.07rem;
+      max-width: 31.57rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -468,6 +501,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__content {
     max-width: 47.85rem;
     position: relative;
@@ -491,6 +533,7 @@ img {
     font-family: Futura Demi, sans-serif; }
   .hero__scroll-down {
     position: absolute;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -546,14 +589,6 @@ img {
 .types__section-title {
   margin-bottom: 2rem; }
 
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
-
 .card__text {
   position: relative;
   max-width: 23.6rem;
@@ -592,7 +627,7 @@ img {
 .design {
   background: linear-gradient(#fff 50%, #131313 50%); }
 
-.section-title__text {
+.section-title-design__text {
   font-family: 'Futura Book', sans-serif;
   text-transform: none;
   font-size: 1.42rem;
