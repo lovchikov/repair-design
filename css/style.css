@@ -393,7 +393,7 @@ template {
   flex-basis: 30%; }
 
 .col-50 {
-  flex-basis: 50%; }
+  width: 50%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -416,7 +416,8 @@ img {
   .section-title {
     text-align: center; }
     .section-title--left {
-      text-align: left; }
+      text-align: left;
+      margin-bottom: 2.5rem; }
     .section-title__heading {
       text-transform: uppercase;
       font-family: 'Yeseva One', cursive;
@@ -688,6 +689,52 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem; }
+    .swiper-slide__text--bottom {
+      margin-bottom: 6.42rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem;
+    margin-top: 0; }
+  .swiper-slide__value {
+    display: block;
+    line-height: 1.42rem;
+    font-size: 1.07rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  background: url("../img/arrow-prev.svg") no-repeat center;
+  left: 0; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0; }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px; }
@@ -709,7 +756,19 @@ img {
   .types__card {
     margin-bottom: 4.29rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .swiper-slide__text--bottom {
+    margin-bottom: 3rem; }
+  .swiper-slide__img {
+    margin-top: 2.35rem; }
+  .swiper-slide__heading {
+    font-size: 1rem; }
+  .section-title__word::after {
+    display: none; }
+  .section-title__heading {
+    font-size: 1.57rem; }
+  .section-title__text {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 570px) {
   .design__section-title {
@@ -736,7 +795,10 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .modal__dialog {
+    margin-left: 20px;
+    margin-right: 20px; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
