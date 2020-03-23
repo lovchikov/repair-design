@@ -750,6 +750,8 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 760px) {
+  .col-50 {
+    width: 100%; }
   .row {
     flex-direction: column;
     align-items: center; }
