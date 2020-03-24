@@ -880,6 +880,8 @@ img {
         justify-content: start; } }
 
 @media screen and (max-width: 570px) {
+  .control__video {
+    min-height: 14.7rem; }
   .design__section-title {
     color: #fff; }
   .design__card {
