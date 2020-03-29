@@ -661,6 +661,9 @@ img {
   .control__policy-label {
     justify-content: center; }
 
+.control__input {
+  color: #131313; }
+
 .video__play {
   position: relative;
   margin: auto; }

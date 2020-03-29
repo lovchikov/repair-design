@@ -48,11 +48,21 @@ $(document).ready(function () {
 
         new WOW().init();
 
-        // Валидация формы
+        // Валидация формы modal
         $('.modal__form').validate({
             errorClass: "invalid",
+            errorPlacement: function (error, element) {
+                if (element.attr("type") == "checkbox") {
+                    return element.next('label').append(error);
+                }
+            
+                 error.insertAfter($(element));
+            },
             rules: {
                 // строчное правило
+                policyCheckbox: {
+                    required: true,
+                },
                 userName: {
                     required: true,
                     minlength: 2
@@ -65,6 +75,9 @@ $(document).ready(function () {
                 }
             }, // Сообщения
             messages: {
+                policyCheckbox: {
+                    required: "Соглашение обязательно",
+                },
                 userName: {
                     required: "Имя обязательно",
                     minlength: "Имя не короче двух букв"
@@ -74,6 +87,82 @@ $(document).ready(function () {
                     required: "Обязательно укажите email",
                     email: "Введите в формате: name@domain.com"
                 }
+            }
+        });
+
+        // Валидация формы control
+        $('.control__form').validate({
+            errorClass: "invalid",
+            errorPlacement: function (error, element) {
+                if (element.attr("type") == "checkbox") {
+                    return element.next('label').append(error);
+                }
+            
+                 error.insertAfter($(element));
+            },
+            rules: {
+                // строчное правило
+                policyCheckbox: {
+                    required: true,
+                },
+                userName: {
+                    required: true,
+                    minlength: 2
+                },
+                userPhone: "required",
+            }, 
+            // Сообщения
+            messages: {
+                policyCheckbox: {
+                    required: "Соглашение обязательно",
+                },
+                userName: {
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче двух букв"
+                },
+                userPhone: "Телефон обязателен",
+            }
+        });
+
+        // Валидация формы footer
+        $('.footer__form').validate({
+            errorClass: "invalid",
+            errorPlacement: function (error, element) {
+                if (element.attr("type") == "checkbox") {
+                    return element.next('label').append(error);
+                }
+            
+                 error.insertAfter($(element));
+            },
+            rules: {
+                // строчное правило
+                policyCheckbox: {
+                    required: true,
+                },
+                userName: {
+                    required: true,
+                    minlength: 2
+                },
+                userQuestion: {
+                    required: true,
+                    minlength: 2
+                },
+                userPhone: "required",
+            }, 
+            // Сообщения
+            messages: {
+                policyCheckbox: {
+                    required: "Соглашение обязательно",
+                },
+                userName: {
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче двух букв"
+                },
+                userQuestion: {
+                    required: "Вопрос обязателен",
+                    minlength: "Не короче двух букв"
+                },
+                userPhone: "Телефон обязателен",
             }
         });
 
