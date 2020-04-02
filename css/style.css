@@ -372,7 +372,8 @@ template {
 .policy__label {
   display: flex;
   align-items: center;
-  font-size: 1.142rem; }
+  font-size: 1.142rem;
+  flex-wrap: wrap; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -385,7 +386,9 @@ template {
     justify-content: center; }
 
 label.invalid {
-  color: tomato; }
+  color: tomato;
+  flex-basis: 100%;
+  text-align: center; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
@@ -766,7 +769,8 @@ img {
     max-width: 925px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 4.709rem; }
+    margin-bottom: 4.709rem;
+    max-height: 465px; }
 
 .modal {
   opacity: 0;
@@ -971,6 +975,10 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; }
+  .footer {
+    background: #131313; }
+    .footer__map {
+      max-height: 265px; }
   .modal__dialog {
     margin-left: 20px;
     margin-right: 20px; } }

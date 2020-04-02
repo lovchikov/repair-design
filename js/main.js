@@ -145,7 +145,7 @@ $(document).ready(function () {
                 },
                 userQuestion: {
                     required: true,
-                    minlength: 2
+                    minlength: 10
                 },
                 userPhone: "required",
             }, 
@@ -160,7 +160,7 @@ $(document).ready(function () {
                 },
                 userQuestion: {
                     required: "Вопрос обязателен",
-                    minlength: "Не короче двух букв"
+                    minlength: "Не короче десяти символов"
                 },
                 userPhone: "Телефон обязателен",
             }
